@@ -1,15 +1,17 @@
 export enum OrderStatus {
-  // When a order has been created but the ticket that is trying to order has not been reserved
-  Created = "create",
+  // When the order has been created, but the
+  // ticket it is trying to order has not been reserved
+  Created = "created",
 
-  // 1. The ticket that the order is trying to reserver is already has already been reserved
-  // 2. The user cancelled the order
-  // 3. The Order expires before payment
+  // The ticket the order is trying to reserve has already
+  // been reserved, or when the user has cancelled the order.
+  // The order expires before payment
   Cancelled = "cancelled",
 
-  // The order is successfully reserved the ticket
+  // The order has successfully reserved the ticket
   AwaitingPayment = "awaiting:payment",
 
-  // The Order has reserved the ticket and the user has provided the payment successfully
+  // The order has reserved the ticket and the user has
+  // provided payment successfully
   Complete = "complete",
 }
