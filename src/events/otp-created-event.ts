@@ -5,5 +5,6 @@ export interface OTPCreatedEvent {
   data: {
     userId: string;
     type: "email" | "phone";
+    otp: number;
   };
 }
