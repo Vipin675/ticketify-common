@@ -25,3 +25,5 @@ export * from "./events/expiration-complete-event";
 export * from "./events/payment-created-event";
 
 export * from "./events/user-created-event";
+
+export * from "./events/otp-created-event";

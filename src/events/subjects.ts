@@ -12,4 +12,5 @@ export enum Subjects {
   PaymentCreated = "payment:created",
 
   UserCreated = "user:created",
+  OTPCreated = "otp:created",
 }
